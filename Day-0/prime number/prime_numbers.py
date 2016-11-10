@@ -15,12 +15,12 @@ def prime_numbers(n):
 		return "%d is a prime number" % (2)
 	elif n == 3:
 		return "%d is a prime number" % (3)
-
-	# Loop through the numbers in descending order
-	for i in range(n,1,-1):
-		if i % 2 == 0 or i % 3 == 0:
-			pass
-		else:
-			primes.append(i)
-			primes.sort()
+	else:
+		# Loop through the numbers in descending order
+		for i in range(n,1,-1):
+			if i % 2 == 0 or i % 3 == 0:
+				pass
+			else:
+				primes.append(i)
+				primes.sort()
 	return primes

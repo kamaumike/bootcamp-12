@@ -6,7 +6,7 @@ def prime_numbers(n):
 	if type(n) != int:
 		return "Only integers are allowed"
 	elif n < 0:
-		return "Only postive integers are alowed"
+		return "Only postive integers are allowed"
 	elif n == 0:
 		return "%d is not a prime number" % (0)
 	elif n == 1:

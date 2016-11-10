@@ -12,6 +12,12 @@ class PrimeNumberTestCase(unittest.TestCase):
 	def test_if_input_is_equal_to_one(self):
 		self.assertEqual(prime_numbers.prime_numbers(1), "%d is not a prime number" % 1)
 
+	def test_if_input_is_equal_to_two(self):
+		self.assertEqual(prime_numbers.prime_numbers(2), "%d is a prime number" % 2)
+
+	def test_if_input_is_equal_to_three(self):
+		self.assertEqual(prime_numbers.prime_numbers(3), "%d is a prime number" % 3)
+
 	def test_if_output_is_a_list(self):
 		self.assertEqual(type(prime_numbers.prime_numbers(5)), list)
 

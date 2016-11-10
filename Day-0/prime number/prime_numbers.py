@@ -9,6 +9,8 @@ def prime_numbers(n):
 		return "%d is not a prime number" % (0)
 	elif n == 1:
 		return "%d is not a prime number" % (1)	
+	elif n < 0:
+		return "Only postive integers are alowed"
 
 	# Loop through the numbers in descending order
 	for i in range(n,1,-1):

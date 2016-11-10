@@ -15,5 +15,8 @@ class PrimeNumberTestCase(unittest.TestCase):
 	def test_if_output_is_a_list(self):
 		self.assertEqual(type(prime_numbers.prime_numbers(5)), list)
 
+	def test_if_input_is_a_negative_number(self):
+		self.assertEqual(prime_numbers.prime_numbers(-1), "Only postive integers are alowed")
+
 if __name__ == '__main__':
 	unittest.main()

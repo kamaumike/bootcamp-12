@@ -1,7 +1,7 @@
 def prime_numbers(n):
 	"""Generate prime numbers between 0 and n"""
 
-	primes = [2,3]
+	primes = []
 
 	if type(n) != int:
 		return "Only integers are allowed"
@@ -16,11 +16,14 @@ def prime_numbers(n):
 	elif n == 3:
 		return "%d is a prime number" % (3)
 	else:
-		# Loop through the numbers in descending order
-		for i in range(n,1,-1):
-			if i % 2 == 0 or i % 3 == 0:
-				pass
+		# Loop through the numbers
+		for num in range(2, n+1):
+			# Loop through the numbers up to num
+			for i in range(2, num):
+				# Divide num by each number
+				if num % i == 0:
+					break
 			else:
-				primes.append(i)
-				primes.sort()
+				# Append the number to the primes list
+				primes.append(num)				
 	return primes

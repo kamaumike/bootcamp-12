@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		<title>Lanslator: The ultimate language translation platform</title>
+
+		<!-- Bootstrap -->
+    	<link type= "text/css" href="css/bootstrap.min.css" rel="stylesheet">		
+	</head>
+	<body>	
+		<!--Container for wrapping entire body-->
+		<div class = "container">	
+			<div class="well">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Language Translator</h3>
+				  	</div>
+				  	<div class="panel-body">
+				    	<div class="form-group">
+				    		<!--Language translation form-->
+							<form action="#" method="post" name="translate">
+								<select>
+									<option>Select the language to translate from:</option>
+									<option value="en">English</option>
+									<option value="sw">Swahili</option>
+									<option value="fr">French</option>
+									<option value="it">Italian</option>
+									<option value="ge">German</option>
+									<option value="sp">Spanish</option>
+								</select>
+								<br><br>
+								<textarea name="from-language" placeholder="Enter text to translate" rows="5" cols="80" autofocus></textarea>
+								<br><br>
+								<select>
+									<option>Select the language to translate to:</option>
+									<option value="en">English</option>
+									<option value="sw">Swahili</option>
+									<option value="fr">French</option>
+									<option value="it">Italian</option>
+									<option value="ge">German</option>
+									<option value="sp">Spanish</option>
+								</select>
+								<br><br>
+								<textarea name="to-language" placeholder="Translation" rows="5" cols="80" disabled>
+								</textarea>
+								<br><br><br><br>								
+								<button type="submit" class="btn btn-primary btn-lg active">Translate</button> 
+				    		</form> 
+						</div><!--Close <div class="form-group">-->
+				  	</div><!--Close <div class="panel-body">-->
+				</div><!--Close <div class="panel panel-primary">-->
+			</div><!--Close <div class="well">-->						
+		</div><!--Close <div class = "container">-->
+	</body>
+</html>

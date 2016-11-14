@@ -10,5 +10,8 @@ class FibonacciTestCase(unittest.TestCase):
 	def test_if_input_is_a_list(self):
 		self.assertEqual(fibonacci([]), "Only integers are allowed")
 
+	def test_if_input_is_a_dictionary(self):
+		self.assertEqual(fibonacci({}), "Only integers are allowed")
+
 if __name__ == '__main__':
 	unittest.main()

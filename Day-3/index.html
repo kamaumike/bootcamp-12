@@ -9,7 +9,10 @@
 		<title>Lanslator: The ultimate language translation platform</title>
 
 		<!-- Bootstrap -->
-    	<link type= "text/css" href="css/bootstrap.min.css" rel="stylesheet">		
+    	<link type= "text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    	<!-- Javascript -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
 	</head>
 	<body>	
 		<!--Container for wrapping entire body-->
@@ -24,7 +27,8 @@
 					<li role="presentation"><a href="#">About</a></li>
 					<li role="presentation"><a href="#">Support</a></li>
 				</ul>			
-			</div><!--Close <div class="page-header">-->			
+			</div><!--Close <div class="page-header">-->
+			<!--Create a gray background with rounded borders-->			
 			<div class="well">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
@@ -34,8 +38,9 @@
 				    	<div class="form-group">
 				    		<!--Language translation form-->
 							<form action="#" method="post" name="translate">
+								<label for="comment">Translate from:</label> 
 								<select>
-									<option>Select the language to translate from:</option>
+									<option>Select the language:</option>
 									<option value="en">English</option>
 									<option value="sw">Swahili</option>
 									<option value="fr">French</option>
@@ -44,21 +49,24 @@
 									<option value="sp">Spanish</option>
 								</select>
 								<br><br>
-								<textarea name="from-language" placeholder="Enter text to translate" rows="5" cols="80" autofocus></textarea>
-								<br><br>
-								<select>
-									<option>Select the language to translate to:</option>
-									<option value="en">English</option>
-									<option value="sw">Swahili</option>
-									<option value="fr">French</option>
-									<option value="it">Italian</option>
-									<option value="ge">German</option>
-									<option value="sp">Spanish</option>
-								</select>
-								<br><br>
-								<textarea name="to-language" placeholder="Translation" rows="5" cols="80" disabled>
+								<textarea class="form-control" name="from-language" id="comment" 
+								placeholder="Enter text to translate" rows="5" cols="80" autofocus></textarea>
 								</textarea>
-								<br><br><br><br>								
+								<br><hr>
+								<label for="comment">Translate to:</label>      							
+								<select>
+									<option><strong>Select the language:</strong></option>
+									<option value="en">English</option>
+									<option value="sw">Swahili</option>
+									<option value="fr">French</option>
+									<option value="it">Italian</option>
+									<option value="ge">German</option>
+									<option value="sp">Spanish</option>
+								</select>
+								<br><br>
+								<textarea class="form-control" name="to-language" id="comment" 
+								placeholder="Translation" rows="5" cols="80" disabled></textarea>
+								<br><br>							
 								<button type="submit" class="btn btn-primary btn-lg active">Translate</button> 
 				    		</form> 
 						</div><!--Close <div class="form-group">-->

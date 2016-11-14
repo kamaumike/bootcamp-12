@@ -41,7 +41,7 @@ class BirdClassTest(unittest.TestCase):
 class MammalClassTest(unittest.TestCase):
     """Tests for the Mammal class"""
 
-    def test_bird_instance(self):
+    def test_mammal_instance(self):
         a_mammal = Animal()
         self.assertIsInstance(a_mammal, Animal, msg="The object should be an instance of the `Animal` class")
 

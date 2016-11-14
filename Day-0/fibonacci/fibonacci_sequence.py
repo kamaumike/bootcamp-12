@@ -3,6 +3,8 @@ def fibonacci(n):
 
 	sequence = [0,1]
 
+	if type(n) != int:
+		return "Only integers are allowed"
 	# Loop through the numbers 
 	for i in range(2,n):
 		# Append the numbers to the sequence list

@@ -9,5 +9,11 @@ class ReverseStringTest(unittest.TestCase):
         self.assertIsNone(reverse_string(''),
                           msg='should return `None` for empty string')
 
+    def test_palidromes1(self):
+        self.assertTrue(
+            reverse_string('anna'),
+            msg='should return true for `anna`'
+        )
+
 if __name__ == '__main__':
     unittest.main()

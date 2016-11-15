@@ -39,7 +39,14 @@ class ReverseStringTest(unittest.TestCase):
             'nomolos',
             reverse_string('solomon'),
             msg='should return `nomolos` for `solomon`'
-        )                        
+        )                
+
+    def test_non_palidromes3(self):
+        self.assertEqual(
+            'csim',
+            reverse_string('misc'),
+            msg='should return `csim` for `misc`'
+        )                
 
 if __name__ == '__main__':
     unittest.main()

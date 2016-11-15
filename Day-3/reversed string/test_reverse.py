@@ -21,5 +21,11 @@ class ReverseStringTest(unittest.TestCase):
             msg='should return true for `NaN`'
         )        
 
+    def test_palidromes3(self):
+        self.assertTrue(
+            reverse_string('civic'),
+            msg='should return true for `civic`'
+        )        
+
 if __name__ == '__main__':
     unittest.main()
